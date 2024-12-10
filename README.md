@@ -1,33 +1,27 @@
 <h2 align=center>Run Nexus Prover Beta</h2>
 
-## Info
-- You need to have min 4 RAM in your system (VPS)
-- Recommended : 6 GB RAM
-- You can buy VPS from [PQ Hosting](https://pq.hosting/?from=622403&lang=en) using cryptocurrency
+## Cấu hình yêu cầu
+- Min 4 RAM 
+- Nên : 6 GB RAM
+- Có thể mua ở đây: ([https://pq.hosting/?from=622403&lang=en](https://contabo.com/en/vps/cloud-vps-0/)) 
 ---
-This script is compatible with Ubuntu on local system as well as on VPS
-- If you run on VPS, u don't need to do anything after running the installation commands
-- If you run on Local system (Ubuntu), u just need to open the terminal after turning on your system to start this prover, it will start running automatically again, if it is not running then use this command to run
-```bash
-sudo systemctl start nexus.service
-```
 
-## Installation
-- You can use either this command
+## Cài đặt
+- lệnh
 ```bash
 curl -sSL https://raw.githubusercontent.com/zunxbt/nexus-prover/main/nexus.sh | bash
 ```
-- Or this command to run this script
+- hoặc lệnh
 ```bash
 wget -qO - https://raw.githubusercontent.com/zunxbt/nexus-prover/main/nexus.sh | bash
 ```
 
-## Status
-- You can check prover status using this command
+## Kiểm tra trạng thái
+- Lệnh để kiểm tra
 ```bash
 systemctl status nexus.service
 ```
-- To check logs, use the below command
+- Lệnh check log
 ```bash
 journalctl -u nexus.service -f -n 50
 ```
